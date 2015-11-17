@@ -18,11 +18,11 @@ namespace PARP2
             _random = new Random();
 
             string command = string.Empty;
-            while (command != "5")
+            while (command != "6")
             {
                 Console.WriteLine("{0}1. Count positive numbers in array." +
                                   "{0}2. Bubble Sort{0}3. Polinom multiplying." +
-                                  "{0}4. Array rounding{0}{0}", Environment.NewLine);
+                                  "{0}4. Array rounding{0}5. Two-level prediction{0}{0}", Environment.NewLine);
                 command = Console.ReadLine();
                 switch (command)
                 {
@@ -37,6 +37,9 @@ namespace PARP2
                         break;
                     case "4":
                         FourthTask();
+                        break;
+                    case "5":
+                        FifthTask();
                         break;
                 }
                 _stopwatch.Reset();
@@ -132,6 +135,15 @@ namespace PARP2
 
             Console.WriteLine("Method 2.2: There is optimized array rounding performed at {0} ticks",
                 _stopwatch.ElapsedTicks);
+        }
+
+        static void FifthTask()
+        {
+            Console.WriteLine("Type binary sequence");
+            var binaryString = Console.ReadLine();
+            int[] numbers = binaryString.Select(c => Int32.Parse(c.ToString())).ToArray();
+            var resultString = Predictor.Predict(numbers);
+            Console.WriteLine("Preditator work:{0}{1}", Environment.NewLine, resultString);
         }
     }
 }
