@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PARP2.Entities
 {
-    class Activity
+    public class Activity
     {
         public int ActivityId { get; set; }
 
@@ -16,8 +16,8 @@ namespace PARP2.Entities
 
         //
 
-        public Activity Parent { get; set; }
+        public virtual Activity Parent { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

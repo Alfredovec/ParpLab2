@@ -20,8 +20,8 @@ namespace PARP2.Entities
 
         //
 
-        public SkillCategory SkillCategory { get; set; }
+        public virtual SkillCategory SkillCategory { get; set; }
 
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

@@ -18,8 +18,8 @@ namespace PARP2.Entities
 
         //
 
-        public IEnumerable<User> Subscribers { get; set; }
+        public virtual IEnumerable<User> Subscribers { get; set; }
 
-        public User Owner { get; set; }
+        public virtual User Owner { get; set; }
     }
 }

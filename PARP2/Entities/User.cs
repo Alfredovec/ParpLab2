@@ -37,22 +37,22 @@ namespace PARP2.Entities
         
         //
 
-        public WorkStatus WorkStatus { get; set; }
+        public virtual WorkStatus WorkStatus { get; set; }
 
-        public Skill PrimarySkill { get; set; }
+        public virtual Skill PrimarySkill { get; set; }
 
-        public WorkCategory WorkCategory { get; set; }
+        public virtual WorkCategory WorkCategory { get; set; }
 
-        public Location Location { get; set; }
+        public virtual Location Location { get; set; }
 
-        public Unit Unit { get; set; }
+        public virtual Unit Unit { get; set; }
 
-        ICollection<Skill> Skills { get; set; }
+        public virtual ICollection<Skill> Skills { get; set; }
             
-        ICollection<Activity> Activities { get; set; }
+        public virtual ICollection<Activity> Activities { get; set; }
         
-        ICollection<Role> Roles { get; set; }
+        public virtual ICollection<Role> Roles { get; set; }
 
-        ICollection<Event> Events { get; set; } 
+        public virtual ICollection<Event> Events { get; set; } 
     }
 }

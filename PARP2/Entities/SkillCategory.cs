@@ -17,8 +17,8 @@ namespace PARP2.Entities
 
         //
 
-        public SkillCategory ParentSkillCategory { get; set; }
+        public virtual SkillCategory ParentSkillCategory { get; set; }
 
-        public ICollection<SkillCategory> ChildCategories { get; set; } 
+        public virtual ICollection<SkillCategory> ChildCategories { get; set; } 
     }
 }

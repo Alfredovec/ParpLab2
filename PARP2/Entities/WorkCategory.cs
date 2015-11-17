@@ -14,6 +14,6 @@ namespace PARP2.Entities
 
         //
 
-        public ICollection<User> Users { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }
