@@ -107,7 +107,7 @@ namespace PARP2
             float[] result = new float[array.Length];
             for (int i = 0; i < array.Length; i++)
             {
-                result[i] = ((int)(array[i] * ((int)array[i]) + 1)) / ((int)array[i]);
+                result[i] = (int)(array[i] + ((int)array[i]>>31) + 0.5f);
             }
             return result;
         }

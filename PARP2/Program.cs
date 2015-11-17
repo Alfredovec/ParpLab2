@@ -117,9 +117,9 @@ namespace PARP2
 
         static void FourthTask()
         {
-            float[] array = new float[1000];
+            float[] array = new float[10000];
             for (int i = 0; i < array.Length; i++)
-                array[i] = (float) (_random.Next(100)*_random.NextDouble());
+                array[i] = (float) (_random.Next(int.MinValue,int.MaxValue)*_random.NextDouble());
 
             _stopwatch.Start();
             float[] roundedFirst = Functions.ArrayRound(array);
