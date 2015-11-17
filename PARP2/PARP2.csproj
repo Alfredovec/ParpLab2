@@ -41,6 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Activity.cs" />
+    <Compile Include="Entities\Event.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Skill.cs" />
+    <Compile Include="Entities\SkillCategory.cs" />
+    <Compile Include="Entities\Unit.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Location.cs" />
+    <Compile Include="Entities\WorkCategory.cs" />
+    <Compile Include="Entities\WorkStatus.cs" />
     <Compile Include="Functions.cs" />
     <Compile Include="Predictor.cs" />
     <Compile Include="Program.cs" />
